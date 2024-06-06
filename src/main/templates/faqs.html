@@ -1,0 +1,39 @@
+{%  extends 'base.html' %}
+{% block title %}
+FAQ
+{% endblock %}
+{% block menu %}
+    <li class="nav-item"><a href="/home" class="nav-link" aria-current="page">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">FAQs</a></li>
+    <li class="nav-item"><a href="/abouts" class="nav-link">About</a></li>
+{% endblock %}
+
+{% block content %}
+<h1>Инструкция</h1>
+<br>
+<ul class="lead">
+  <li>
+      Перейдите на главную страницу приложения <strong>"Home"</strong>.
+  </li>
+  <li>
+      Вставьте в поле <strong>"Текст статьи"</strong> нужный для перевода текст и нажмите на кнопку <strong>"Translate"</strong>.
+  </li>
+  <li>
+      В поле <strong>"Перевод статьи"</strong> отобразится переведённый на русский язык текст.
+  </li>
+  <li>Нажмите на кнопку <strong>"Summary"</strong> для генерации краткого содержания статьи.</li>
+  <li>Краткое изложение статьи отобразится в поле <strong>"Краткое содержание статьи"</strong>.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

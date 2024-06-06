@@ -1,0 +1,29 @@
+{%  extends 'base.html' %}
+{% block title %}
+    About project
+{% endblock %}
+{% block menu %}
+    <li class="nav-item"><a href="/home" class="nav-link" >Home</a></li>
+    <li class="nav-item"><a href="/faqs" class="nav-link">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">About</a></li>
+{% endblock %}
+{% block content %}
+<h1>Персональный помощник для студентов</h1>
+<br>
+<h2>Цель проекта</h2>
+<p class="lead">
+    Облегчить студентам получение знаний из зарубежных источников, затрачивая на эти задачи минимум времени.
+</p>
+
+<h2>Функцианльность</h2>
+<p class="lead">
+    Перевод статьи с английского языка на русский и генерация краткого тезисного конспект текста.
+</p>
+
+<h2>Лицензия</h2>
+<p class="lead">
+    Приложение включает в себя код из библиотеки Python, Django, Pandas, Numpy, Transformers, Hugging face, Bootstrap.
+    Все компоненты входящие в состав приложения с открытым исходным кодом и имеют разрешающую лицензия GPL.
+</p>
+
+{% endblock %}

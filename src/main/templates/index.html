@@ -1,0 +1,47 @@
+{%  extends 'base.html' %}
+{% block title %}
+    Главная страница
+{% endblock %}
+{% block menu %}
+         <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="/faqs" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="/abouts" class="nav-link">About</a></li>
+{% endblock %}
+
+{% block content %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="row form-group">
+        <div class="col-10 form-group">
+            <label for=" ">Текст статьи</label>
+            {{ originalFrom.original_article }}
+        </div>
+        <div class="col-2 form-group">
+            <button type="submit" class="btn btn-primary btn-sm"  style="top: 50%; position: relative;" >Translate</button>
+        </div>
+    </div>
+</form>
+<br/>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="row form-group">
+        <div class="col-10 form-group">
+            <label for=" ">Перевод Статьи</label>
+            {{ translateFrom.translated_article }}
+        </div>
+        <div class="col-2 form-group">
+            <button type="submit" class="btn btn-primary btn-sm" style="top: 50%; position: relative;">Summary</button>
+        </div>
+    </div>
+</form>
+<br/>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="row form-group">
+        <div class="col-10 form-group">
+            <label for=" ">Краткое содержание статьи</label>
+            {{ summaryForm.summarize_article }}
+        </div>
+    </div>
+</form>
+{% endblock %}
